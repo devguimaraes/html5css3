@@ -156,10 +156,25 @@ table#tabela {
     margin: 0px;
     border-spacing: 0px;
     margin: auto;
+    
 }
 
 table#tabela caption {
     margin-bottom: 0.5rem;
+    color: #808080;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+/*Data do Capition*/
+table#tabela caption span#data {
+    color: black;
+    display: block;
+    float: right;
+    margin-top: 0.2rem;
+    margin-bottom: 0rem;
+    font-size: 0.8rem;
+    
 }
 
 table#tabela th {
