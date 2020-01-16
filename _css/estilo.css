@@ -4,12 +4,24 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 62, 5%;
     background-color: #dddddd;
 }
+div#interface a {
+    text-decoration: none;
+    color: black;
+    transform-origin: center;
+    transition: 1s;
+}
 
+div#interface a:hover {
+    text-decoration: underline;
+    font-style: oblique;
+    
+}
 div#interface {
     width: 57rem;
     background-color: white;
@@ -130,16 +142,58 @@ nav#menu h1 {
 
 section#corpo {
     display: block;
-    width: 470px;
+    width: 450px;
     float: left;
     border-right: 0.2rem #606060 solid;
     padding-right: 0.9rem;
+}
+
+article#NoticiaPrincipal h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.667rem ;
+    color: #606060;
+    margin-bottom: 0px;
+
+}
+
+article#NoticiaPrincipal h2 {
+    font-size: 1rem;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 2px 0px 2px 5px;
+    margin: 0.989rem;
+    margin-bottom: 0px;
+}
+
+article#NoticiaPrincipal h3 {
+    font-size: 1.09rem;
+    color: #ccccce;
+    margin-top: 0.5rem;
 }
 
 aside#menulateral {
     display: block;
     width: 400px;
     float: right;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #dddddd;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+aside#menulateral h1 {
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 0px;
+    font-size: 2.0rem; 
+}
+
+aside#menulateral h3 {
+    font-size: 1rem;
+    color: #606060;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
 }
 
 footer#rodape {
