@@ -1,27 +1,51 @@
+@font-face {
+    font-family: "font-logo";
+    src: url(../_fonts/computer-font.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 62,5%;
+    font-size: 62, 5%;
     background-color: #dddddd;
-    
 }
 
 div#interface {
-    width:57rem;
+    width: 57rem;
     background-color: white;
     margin: -1.3rem auto 0rem auto;
     padding: 1rem;
-    box-shadow: 0rem 0rem 0.9rem RGBA(0,0,0, 0.5);
-    
+    box-shadow: 0rem 0rem 0.9rem RGBA(0, 0, 0, 0.5);
 }
 
 header img#icone {
     position: absolute;
-    left:60rem;
-    top: 3.5rem
+    left: 60rem;
+    top: 5.3rem
 }
 
 header#cabecalho {
-    
+    border-bottom: 0.1rem #606060 solid;
+    height: 10rem;
+    background: url("../_imagens/glass-logo-peq.jpg");
+    background-repeat: no-repeat;
+    background-position: 0rem 5.8rem;
+}
+
+header#cabecalho h1 {
+    font-family: "'Titillium Web', sans-serif";
+    font-size: 3rem;
+    color: #606060;
+    text-shadow: 0.5rem 0.5rem 0.5rem RGBA(0, 0, 0, 0.6);
+    padding: 0rem;
+    margin-bottom: 0rem;
+}
+
+header#cabecalho h2 {
+    color: #888888;
+    font-size: 1.4rem;
+    padding: 0rem;
+    margin-top: 0rem;
 }
 
 p {
@@ -62,29 +86,28 @@ figure.foto-legenda figcaption:hover {
     opacity: 1;
 }
 
+
 /*Formatação do Menu*/
 
 nav#menu {
     display: block;
 }
 
-
 nav#menu ul {
-   list-style: none;
-   text-transform: uppercase;
-   position: absolute;
-   top: -0.5rem;
-   left: 30.0rem;
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -0.5rem;
+    left: 30.0rem;
 }
 
 nav#menu li {
     display: inline-block;
-    background-color:#dddddd;
+    background-color: #dddddd;
     padding: 0.5rem;
     margin: 0.2rem;
     transition: 1s;
     -webkit-transition: 1s;
-    
 }
 
 nav#menu a {
@@ -99,9 +122,70 @@ nav#menu a:hover {
 
 nav#menu li:hover {
     background-color: #606060;
-    
 }
 
-nav#menu h1{
+nav#menu h1 {
     display: none;
+}
+
+section#corpo {
+    display: block;
+    width: 470px;
+    float: left;
+    border-right: 0.2rem #606060 solid;
+    padding-right: 0.9rem;
+}
+
+aside#menulateral {
+    display: block;
+    width: 400px;
+    float: right;
+}
+
+footer#rodape {
+    border-top: 0.2rem solid #606060;
+    clear: both;
+}
+
+footer#rodape p {
+    text-align: center;
+}
+
+table#tabela {
+    border: 0.2rem solid black;
+    margin: 0px;
+    border-spacing: 0px;
+    margin: auto;
+}
+
+table#tabela caption {
+    margin-bottom: 0.5rem;
+}
+
+table#tabela th {
+    background-color: black;
+    color: white;
+    border-right: 0.1rem solid white;
+    border-bottom: 0.1rem solid black;
+    padding: 5px;
+}
+
+table#tabela td {
+    text-align: center;
+    border-right: 0.1rem solid black;
+    padding: 5px;
+}
+
+table#tabela th.apaga {
+    background-color: black;
+    color: white;
+    border-right: 0.1rem solid black!important;
+    border-bottom: 0.1rem solid black;
+    padding: 5px;
+}
+
+table#tabela td.apaga {
+    text-align: center;
+    border-right: 0.1rem solid white!important;
+    padding: 5px;
 }
