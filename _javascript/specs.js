@@ -20,3 +20,13 @@ function mudarFoto(arquivo) {
         document.getElementById("icone").src = arquivo;
     }
 }
+
+function voltaFotoIndex() {
+    parametro = "_imagens/glass-oculos-preto-peq.png"
+    document.getElementById("icone").src = parametro;
+}
+
+function voltaFotoSpecs() {
+    parametro = "_imagens/especificacoes.png"
+    document.getElementById("icone").src = parametro;
+}
