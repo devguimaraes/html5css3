@@ -1,25 +1,65 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-[AQUI ENTRA UMA FOTO]
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto HTML5</title>
+    <meta name="author" content="Bruno Guimarães">
+    <meta name="description" content="Aula de HTML5 e CSS3 - Gustvo Guanabara">
+    <meta name="keywords" content="html5, css3, desenvolviment Web, curso em video, gustavo guanabara">
+    <link rel="stylesheet" href="_css/media.css">
+</head>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+<body>
 
-Glass > Multimídia
-Sons e Vídeos
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+    <div id="interface">
+        <header id="cabecalho">
+
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+
+            <img id="icone" src="_imagens/multimidia.png">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmousemove="mudarFoto(1)" onmouseout="voltaFotoMidia()"><a href="index.html">Home</a></li>
+                    <li onmousemove="mudarFoto(2)" onmouseout="voltaFotoMidia()"><a href="specs.html">Especificações</a></li>
+                    <li onmousemove="mudarFoto(3)" onmouseout="voltaFotoMidia()"><a href="fotos.html">Fotos</a></li>
+                    <li onmousemove="mudarFoto(4)" onmouseout="voltaFotoMidia()"><a href="multimidia.html">Multimídia</a></li>
+                    <li onmousemove="mudarFoto(5)" onmouseout="voltaFotoFoto()"><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </header>
 
 
-Áudio e Vídeo
 
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
+        <article>
+            <header>
+                <h3>Glass > Fotos</h3>
+                <h1>Sons e Vídeos</h1>
+                <h3>por Bruno Guimarães</h3>
 
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+                <div id="tvRadio">
+                    <audio id="musica">
+
+                    </audio>
+                    <video id="filme">
+                        
+                    </video>
+                </div>
+                Áudio e Vídeo [AQUI ENTRA UM VÍDEO] [AQUI ENTRA UM ÁUDIO]
+            </header>
+        </article>
+
+
+
+        <footer id="rodape">
+            <p>Copyright 2013 - by Bruno Guimaraes</p>
+            <p><a href="hhtps://www.facebook.com" target="_blank">Facebook</a> | <a href="https://www.twitter.com" target="_blank">Twitter</a></p>
+        </footer>
+    </div>
+</body>
+
+<script src="_javascript/specs.js"></script>
+
+</html>

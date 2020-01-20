@@ -30,3 +30,18 @@ function voltaFotoSpecs() {
     parametro = "_imagens/especificacoes.png"
     document.getElementById("icone").src = parametro;
 }
+
+function voltaFotoFoto() {
+    parametro = "_imagens/fotos.png"
+    document.getElementById("icone").src = parametro;
+}
+
+function voltaFotoMidia() {
+    parametro = "_imagens/multimidia.png"
+    document.getElementById("icone").src = parametro;
+}
+
+function voltaFotoForm() {
+    parametro = "_imagens/contato.png"
+    document.getElementById("icone").src = parametro;
+}

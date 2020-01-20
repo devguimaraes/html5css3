@@ -80,35 +80,6 @@
             font-size: 1.2rem;
             box-sizing: border-box;
         }
-        /*Formatação de imagens com legendas*/
-        
-        figure.foto-legenda {
-            position: relative;
-            border: 0.8rem solid white;
-            box-shadow: 0.1rem 0.1rem 0.4rem black;
-        }
-        
-        figure.foto-legenda img {
-            width: 100%;
-            height: 100%;
-        }
-        
-        figure.foto-legenda figcaption {
-            opacity: 0;
-            background-color: rgba(0, 0, 0, 0.4);
-            color: white;
-            padding: 1.0rem;
-            box-sizing: border-box;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0rem;
-            transition: opacity 1s;
-        }
-        
-        figure.foto-legenda figcaption:hover {
-            opacity: 1;
-        }
         /*Formatação do Menu*/
         
         nav#menu {
@@ -173,11 +144,11 @@
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <ul>
-                    <li onmousemove=""><a href="index.html">Home</a></li>
-                    <li><a href="specs.html">Especificações</a></li>
-                    <li><a href="fotos.html">Fotos</a></li>
-                    <li><a href="multimidia.html">Multimídia</a></li>
-                    <li><a href="fale-conosco.html">Fale conosco</a></li>
+                    <li onmousemove="mudarFoto(1)" onmouseout="voltaFotoFoto()"><a href="index.html">Home</a></li>
+                    <li onmousemove="mudarFoto(2)" onmouseout="voltaFotoFoto()"><a href="specs.html">Especificações</a></li>
+                    <li onmousemove="mudarFoto(3)" onmouseout="voltaFotoFoto()"><a href="fotos.html">Fotos</a></li>
+                    <li onmousemove="mudarFoto(4)" onmouseout="voltaFotoFoto()"><a href="multimidia.html">Multimídia</a></li>
+                    <li onmousemove="mudarFoto(5)" onmouseout="voltaFotoFoto()"><a href="fale-conosco.html">Fale conosco</a></li>
                 </ul>
             </nav>
         </header>
@@ -185,17 +156,16 @@
 
 
 
-        Glass > Especificações Raio-X no Google Glass por Gustavo Guanabara Atualizado em 01/Maio/2013 Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio
-        de novas informações.
+
 
 
         <footer id="rodape">
-            <p>Copyright 2013 - by Gustavo Guanabara</p>
+            <p>Copyright 2013 - by Bruno Guimaraes</p>
             <p><a href="hhtps://www.facebook.com" target="_blank">Facebook</a> | <a href="https://www.twitter.com" target="_blank">Twitter</a></p>
         </footer>
     </div>
 </body>
 
-<script src="_javascript/especs.js"></script>
+<script src="_javascript/specs.js"></script>
 
 </html>
