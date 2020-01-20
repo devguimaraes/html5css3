@@ -60,42 +60,15 @@ header#cabecalho h2 {
     margin-top: 0rem;
 }
 
+article header img#glass-oculos {
+    margin-bottom: 50px;
+}
+
 p {
     text-align: justify;
     text-indent: 4.5rem;
     font-size: 1.2rem;
     box-sizing: border-box;
-}
-
-
-/*Formatação de imagens com legendas*/
-
-figure.foto-legenda {
-    position: relative;
-    border: 0.8rem solid white;
-    box-shadow: 0.1rem 0.1rem 0.4rem black;
-}
-
-figure.foto-legenda img {
-    width: 100%;
-    height: 100%;
-}
-
-figure.foto-legenda figcaption {
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    padding: 1.0rem;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0rem;
-    transition: opacity 1s;
-}
-
-figure.foto-legenda figcaption:hover {
-    opacity: 1;
 }
 
 
@@ -138,6 +111,28 @@ nav#menu li:hover {
 
 nav#menu h1 {
     display: none;
+}
+
+section#corpoFull article header h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.667rem;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+section#corpoFull article header h3 {
+    font-size: 1.09rem;
+    color: #ccccce;
+    margin-top: 0.5rem;
+}
+
+section#corpoFull iframe#frame {
+    width: 380px;
+    height: 380px;
+    border: none;
+    overflow: hidden;
+    transition: 1s;
 }
 
 footer#rodape {

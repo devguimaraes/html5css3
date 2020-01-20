@@ -4,12 +4,12 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
-
 body {
     font-family: Helvetica, sans-serif;
     font-size: 62, 5%;
     background-color: #dddddd;
 }
+
 div#interface a {
     text-decoration: none;
     color: black;
@@ -20,8 +20,8 @@ div#interface a {
 div#interface a:hover {
     text-decoration: underline;
     font-style: oblique;
-    
 }
+
 div#interface {
     width: 57rem;
     background-color: white;
@@ -98,6 +98,12 @@ figure.foto-legenda figcaption:hover {
     opacity: 1;
 }
 
+figure.foto-legenda p {
+    text-align: justify;
+    text-indent: 0px;
+    color: #ccccce;
+}
+
 
 /*Formatação do Menu*/
 
@@ -150,10 +156,9 @@ section#corpo {
 
 article#NoticiaPrincipal h1 {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 1.667rem ;
+    font-size: 1.667rem;
     color: #606060;
     margin-bottom: 0px;
-
 }
 
 article#NoticiaPrincipal h2 {
@@ -184,7 +189,7 @@ aside#menulateral {
 aside#menulateral h1 {
     font-family: 'Titillium Web', sans-serif;
     margin-top: 0px;
-    font-size: 2.0rem; 
+    font-size: 2.0rem;
 }
 
 aside#menulateral h3 {
@@ -210,7 +215,6 @@ table#tabela {
     margin: 0px;
     border-spacing: 0px;
     margin: auto;
-    
 }
 
 table#tabela caption {
@@ -220,7 +224,9 @@ table#tabela caption {
     font-weight: bolder;
 }
 
+
 /*Data do Capition*/
+
 table#tabela caption span#data {
     color: black;
     display: block;
@@ -228,7 +234,6 @@ table#tabela caption span#data {
     margin-top: 0.2rem;
     margin-bottom: 0rem;
     font-size: 0.8rem;
-    
 }
 
 table#tabela th {

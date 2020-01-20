@@ -35,3 +35,7 @@ img.img-dir {
     float: right;
     margin-left: 0.5rem;
 }
+
+article#sensores {
+    transition: 1s;
+}
