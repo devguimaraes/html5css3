@@ -62,7 +62,6 @@ header#cabecalho h2 {
 
 p {
     text-align: justify;
-    text-indent: 4.5rem;
     font-size: 1.2rem;
     box-sizing: border-box;
 }
@@ -130,4 +129,14 @@ footer#rodape {
 
 footer#rodape p {
     text-align: center;
+}
+
+form p#sms label {
+    display: block;
+    width: 100px;
+    padding: 5px;
+}
+
+form p#sms textarea {
+    bottom: 90px;
 }
