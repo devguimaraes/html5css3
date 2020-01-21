@@ -126,6 +126,43 @@ article header h3 {
 
 /*meiuca*/
 
+article header div#tvRadio {
+    width: 1000px;
+    height: 590px;
+    margin: auto;
+    background: url("../_imagens/radio-tv.png") no-repeat;
+}
+
+audio#musica {
+    display: block;
+    position: relative;
+    left: 575px;
+    top: 490px;
+    width: 300px;
+}
+
+video#filme {
+    display: block;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 450px;
+    top: 50px;
+    left: 85px;
+    height: 280px;
+}
+
+iframe#filme {
+    display: block;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 450px;
+    top: 50px;
+    left: 85px;
+    height: 280px;
+}
+
 
 /* Rodapé */
 
