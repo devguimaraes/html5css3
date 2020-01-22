@@ -7,6 +7,7 @@
     <meta name="author" content="Bruno Guimarães">
     <meta name="description" content="Aula de HTML5 e CSS3 - Gustvo Guanabara">
     <meta name="keywords" content="html5, css3, desenvolviment Web, curso em video, gustavo guanabara">
+    <link rel="icon" href="_imagens/icone.ico">
     <link rel="stylesheet" href="_css/form.css">
 </head>
 
@@ -30,18 +31,15 @@
                 </ul>
             </nav>
         </header>
-
-
-
         <article>
             <header>
                 <h3>Glass > Fotos</h3>
                 <h1>Formulário de Contato</h1>
                 <h3>por Bruno Guimarães</h3>
 
-                <form method="POST" id="cadastro" action="malito:bguimaraes@outlook.com">
-                    <fieldset>
-                        <legend id="usuario">Identificação do Usuário</legend>
+                <form method="POST" id="cadastro" action="malito:bguimaraes@outlook.com" oninput="calc_total();">
+                    <fieldset id="usuario">
+                        <legend>Identificação do Usuário</legend>
                         <p><label for="idNome">Nome:</label> <input type="text" placeholder="Digite seu nome" name="nameNome" id="idNome" size="20" maxlength="60" autofocus></p>
                         <p><label for="idSenha">Senha</label><input type="password" placeholder="Digite sua senha" name="nameSenha" maxlength="12" id="idSenha"> </p>
                         <p><label for="idEmail">Email:</label><input type="email" placeholder="Digite seu e-mail" name="nameEmail" id="idEmail" minlength="2" maxlength="40 "></p>
@@ -52,7 +50,7 @@
                         </fieldset>
                         <p><label for="nascimento">Data de Nascimento:</label><input type="date" placeholder="Dt Nascimento" id="nascimento"> </p>
                     </fieldset>
-                    <fieldset id="endereço">
+                    <fieldset id="endereco">
                         <legend>Endereço do Usuário</legend>
                         <p><label for="endereco">Logradouro:</label><input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço"></p>
                         <p><label for="numero">Número:</label><input type="number" id="numero" name="numero" placeholder="Número da Casa"></p>
@@ -71,7 +69,7 @@
                         <legend>
                             Mensagen do Usuário
                         </legend>
-                        <p><label for="urgencia">Grau de Urgência:</label> Min
+                        <p><label for="urgencia">Grau de Urgência:</label>Min
                             <input type="range" min="0" max="10" name="emergency" id="urgencia">Max
                         </p>
                         <p id="sms"><label for="msg">Mensagem:</label>
@@ -80,18 +78,23 @@
                     </fieldset>
                     <fieldset id="pedido">
                         <legend>Quero um Google Glass </legend>
-                        <p><label for="Glass">Gostaria de adquirir um Google Glass quando disponível </label></p>
-                        <p><label for="cor">Cor:</p>
-                        <p><label for="qntd">Quantidade:</label></p>
-                        <p><label for="total">Preço Total: R$</label></p>
+                        <p><input type="checkbox" name="Glass" id="Glass" checked>
+                            <label for="Glass">Gostaria de adquirir um Google Glass quando disponível </label></p>
+                        <p><label for="cor">Cor:
+                            <input type="color" name="cor" id="cor" value="#0000ff">
+                        </p>
+                        <p><label for="qntd">Quantidade:</label>
+                            <input type="number" id="qntd" name="quantidade" min="0" max="10" value="1"></p>
+                        <p><label for="total">Preço Total: R$</label>
+                            <input type="text" name="total" id="total" readonly></p>
                     </fieldset>
-                    <button type="submit">Enviar</button>
+                    <div id="botao">
+                        <button type="submit">Enviar</button>
+                    </div>
+
                 </form>
             </header>
         </article>
-
-
-
         <footer id="rodape">
             <p>Copyright 2013 - by Bruno Guimaraes</p>
             <p><a href="hhtps://www.facebook.com" target="_blank">Facebook</a> | <a href="https://www.twitter.com" target="_blank">Twitter</a></p>
@@ -100,5 +103,13 @@
 </body>
 
 <script src="_javascript/specs.js"></script>
+<script>
+    function calc_total() {
+        var qtd = parseInt(document.getElementById("qntd").value);
+        tot = qtd * 1500;
+        document.getElementById("total").value = tot;
+
+    }
+</script>
 
 </html>
